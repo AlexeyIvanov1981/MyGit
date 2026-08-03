@@ -38,6 +38,9 @@ dependencies {
     // ===== Jackson для JSON-десериализации =====
     testImplementation("com.fasterxml.jackson.core:jackson-databind:2.17.2")
 
+    // ===== SLF4J реализация для логов =====
+    testImplementation("org.slf4j:slf4j-simple:2.0.16")
+
 }
 
 //java {
