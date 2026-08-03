@@ -43,11 +43,11 @@ dependencies {
 
 }
 
-//java {
-//    toolchain {
-//        languageVersion = JavaLanguageVersion.of(17)
-//    }
-//}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
@@ -64,4 +64,9 @@ tasks.test {
         showExceptions = true
         showCauses = true
     }
+}
+
+// Автозагрузка JDK для toolchains
+tasks.withType<JavaCompile> {
+    options.forkOptions.javaHome = null
 }
