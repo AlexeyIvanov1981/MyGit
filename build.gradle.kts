@@ -40,11 +40,11 @@ dependencies {
 
 }
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
-    }
-}
+//java {
+//    toolchain {
+//        languageVersion = JavaLanguageVersion.of(17)
+//    }
+//}
 
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
